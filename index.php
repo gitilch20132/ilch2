@@ -1,6 +1,13 @@
 <?php
 
 /**
+ * Define a short directory separator
+ * 
+ * @see  http://php.net/manual/de/dir.constants.php
+ */
+define('DS', DIRECTORY_SEPARATOR);
+
+/**
  * The directory in which your application specific resources are located.
  * The application directory must contain the bootstrap.php file.
  *
@@ -9,11 +16,22 @@
 $application = 'application';
 
 /**
+ * The directory in which your ilch modules are located.
+ */
+$iplutoModules = 'ilchpluto'.DS.'modules';
+
+/**
+ * The directory in which the Ilch resources are located. The system
+ * directory must contain the classes/ilch.php file.
+ */
+$iplutoSystem = 'ilchpluto'.DS.'system';
+
+/**
  * The directory in which your modules are located.
  *
  * @see  http://kohanaframework.org/guide/about.install#modules
  */
-$modules = 'modules';
+$kohanaModules = 'kohana'.DS.'modules';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -21,7 +39,7 @@ $modules = 'modules';
  *
  * @see  http://kohanaframework.org/guide/about.install#system
  */
-$system = 'system';
+$kohanaSystem = 'kohana'.DS.'system';
 
 /**
  * The default extension of resource files. If you change this, all resources
@@ -60,23 +78,33 @@ define('DOCROOT', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR);
 if ( ! is_dir($application) AND is_dir(DOCROOT.$application))
 	$application = DOCROOT.$application;
 
-// Make the modules relative to the docroot, for symlink'd index.php
-if ( ! is_dir($modules) AND is_dir(DOCROOT.$modules))
-	$modules = DOCROOT.$modules;
+// Make the ilch modules relative to the docroot, for symlink'd index.php
+if ( ! is_dir($iplutoModules) AND is_dir(DOCROOT.$iplutoModules))
+	$iplutoModules = DOCROOT.$iplutoModules;
 
-// Make the system relative to the docroot, for symlink'd index.php
-if ( ! is_dir($system) AND is_dir(DOCROOT.$system))
-	$system = DOCROOT.$system;
+// Make the ilch system relative to the docroot, for symlink'd index.php
+if ( ! is_dir($iplutoSystem) AND is_dir(DOCROOT.$iplutoSystem))
+	$iplutoSystem = DOCROOT.$iplutoSystem;
+
+// Make the kohana modules relative to the docroot, for symlink'd index.php
+if ( ! is_dir($kohanaModules) AND is_dir(DOCROOT.$kohanaModules))
+	$kohanaModules = DOCROOT.$kohanaModules;
+
+// Make the kohana system relative to the docroot, for symlink'd index.php
+if ( ! is_dir($kohanaSystem) AND is_dir(DOCROOT.$kohanaSystem))
+	$kohanaSystem = DOCROOT.$kohanaSystem;
 
 // Define the absolute paths for configured directories
 define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
-define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
-define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
+define('IPLUTO_MODPATH', realpath($iplutoModules).DIRECTORY_SEPARATOR);
+define('IPLUTO_SYSPATH', realpath($iplutoSystem).DIRECTORY_SEPARATOR);
+define('MODPATH', realpath($kohanaModules).DIRECTORY_SEPARATOR);
+define('SYSPATH', realpath($kohanaSystem).DIRECTORY_SEPARATOR);
 
 // Clean up the configuration vars
-unset($application, $modules, $system);
+unset($application, $iplutoModules, $iplutoSystem, $kohanaModules, $kohanaSystem);
 
-if (file_exists('install'.EXT))
+if ( ! getenv('DEVELOPMENT') AND file_exists('install'.EXT))
 {
 	// Load the installation check
 	return include 'install'.EXT;
