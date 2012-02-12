@@ -1,27 +1,39 @@
-[submodule "system"]
-	path = system
-	url = http://github.com/kohana/core.git
-[submodule "modules/codebench"]
-	path = modules/codebench
-	url = http://github.com/kohana/codebench.git
-[submodule "modules/database"]
-	path = modules/database
-	url = http://github.com/kohana/database.git
-[submodule "modules/image"]
-	path = modules/image
-	url = http://github.com/kohana/image.git
-[submodule "modules/orm"]
-	path = modules/orm
-	url = http://github.com/kohana/orm.git
-[submodule "modules/auth"]
-	path = modules/auth
-	url = http://github.com/kohana/auth.git
-[submodule "modules/userguide"]
-	path = modules/userguide
-	url = http://github.com/kohana/userguide.git
-[submodule "modules/cache"]
-	path = modules/cache
-	url = http://github.com/kohana/cache.git
-[submodule "modules/unittest"]
-	path = modules/unittest
-	url = http://github.com/kohana/unittest.git
+[submodule "kohana/system"]
+	path = kohana/system
+	url = https://github.com/kohana/core.git
+[submodule "kohana/modules/auth"]
+	path = kohana/modules/auth
+	url = https://github.com/kohana/auth.git
+[submodule "kohana/modules/cache"]
+	path = kohana/modules/cache
+	url = https://github.com/kohana/cache.git
+[submodule "kohana/modules/codebench"]
+	path = kohana/modules/codebench
+	url = https://github.com/kohana/codebench.git
+[submodule "kohana/modules/database"]
+	path = kohana/modules/database
+	url = https://github.com/kohana/database.git
+[submodule "kohana/modules/image"]
+	path = kohana/modules/image
+	url = https://github.com/kohana/image.git
+[submodule "kohana/modules/orm"]
+	path = kohana/modules/orm
+	url = https://github.com/kohana/orm.git
+[submodule "kohana/modules/unittest"]
+	path = kohana/modules/unittest
+	url = https://github.com/kohana/unittest.git
+[submodule "kohana/modules/userguide"]
+	path = kohana/modules/userguide
+	url = https://github.com/kohana/userguide.git
+[submodule "ilchpluto/ilchpluto.system"]
+	path = ilchpluto/ilchpluto.system
+	url = https://github.com/IlchCMS/ilchpluto.system.git
+[submodule "ilchpluto/system"]
+	path = ilchpluto/system
+	url = https://github.com/IlchCMS/ilchpluto.system.git
+[submodule "ilchpluto/themes/frontend"]
+	path = ilchpluto/themes/frontend
+	url = https://github.com/IlchCMS/ilchpluto.themes.frontend.git
+[submodule "ilchpluto/themes/backend"]
+	path = ilchpluto/themes/backend
+	url = https://github.com/IlchCMS/ilchpluto.themes.backend.git
