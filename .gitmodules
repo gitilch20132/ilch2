@@ -25,18 +25,6 @@
 [submodule "kohana/modules/userguide"]
 	path = kohana/modules/userguide
 	url = https://github.com/kohana/userguide.git
-[submodule "ilchpluto/ilchpluto.system"]
-	path = ilchpluto/ilchpluto.system
-	url = https://github.com/IlchCMS/ilchpluto.system.git
-[submodule "ilchpluto/system"]
-	path = ilchpluto/system
-	url = https://github.com/IlchCMS/ilchpluto.system.git
-[submodule "ilchpluto/themes/frontend"]
-	path = ilchpluto/themes/frontend
-	url = https://github.com/IlchCMS/ilchpluto.themes.frontend.git
-[submodule "ilchpluto/themes/backend"]
-	path = ilchpluto/themes/backend
-	url = https://github.com/IlchCMS/ilchpluto.themes.backend.git
 [submodule "ilch/system"]
 	path = ilch/system
 	url = https://github.com/IlchCMS/ilchpluto.system.git
