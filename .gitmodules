@@ -37,3 +37,6 @@
 [submodule "ilchpluto/themes/backend"]
 	path = ilchpluto/themes/backend
 	url = https://github.com/IlchCMS/ilchpluto.themes.backend.git
+[submodule "ilch/system"]
+	path = ilch/system
+	url = https://github.com/IlchCMS/ilchpluto.system.git
