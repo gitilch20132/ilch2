@@ -18,13 +18,13 @@ $application = 'application';
 /**
  * The directory in which your ilch modules are located.
  */
-$iplutoModules = 'ilchpluto'.DS.'modules';
+$ilchModules = 'ilch'.DS.'modules';
 
 /**
  * The directory in which the Ilch resources are located. The system
  * directory must contain the classes/ilch.php file.
  */
-$iplutoSystem = 'ilchpluto'.DS.'system';
+$ilchSystem = 'ilch'.DS.'system';
 
 /**
  * The directory in which your modules are located.
@@ -79,12 +79,12 @@ if ( ! is_dir($application) AND is_dir(DOCROOT.$application))
 	$application = DOCROOT.$application;
 
 // Make the ilch modules relative to the docroot, for symlink'd index.php
-if ( ! is_dir($iplutoModules) AND is_dir(DOCROOT.$iplutoModules))
-	$iplutoModules = DOCROOT.$iplutoModules;
+if ( ! is_dir($ilchModules) AND is_dir(DOCROOT.$ilchModules))
+	$ilchModules = DOCROOT.$ilchModules;
 
 // Make the ilch system relative to the docroot, for symlink'd index.php
-if ( ! is_dir($iplutoSystem) AND is_dir(DOCROOT.$iplutoSystem))
-	$iplutoSystem = DOCROOT.$iplutoSystem;
+if ( ! is_dir($ilchSystem) AND is_dir(DOCROOT.$ilchSystem))
+	$ilchSystem = DOCROOT.$ilchSystem;
 
 // Make the kohana modules relative to the docroot, for symlink'd index.php
 if ( ! is_dir($kohanaModules) AND is_dir(DOCROOT.$kohanaModules))
@@ -96,13 +96,13 @@ if ( ! is_dir($kohanaSystem) AND is_dir(DOCROOT.$kohanaSystem))
 
 // Define the absolute paths for configured directories
 define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
-define('IPLUTO_MODPATH', realpath($iplutoModules).DIRECTORY_SEPARATOR);
-define('IPLUTO_SYSPATH', realpath($iplutoSystem).DIRECTORY_SEPARATOR);
+define('ILCH_MODPATH', realpath($ilchModules).DIRECTORY_SEPARATOR);
+define('ILCH_SYSPATH', realpath($ilchSystem).DIRECTORY_SEPARATOR);
 define('MODPATH', realpath($kohanaModules).DIRECTORY_SEPARATOR);
 define('SYSPATH', realpath($kohanaSystem).DIRECTORY_SEPARATOR);
 
 // Clean up the configuration vars
-unset($application, $iplutoModules, $iplutoSystem, $kohanaModules, $kohanaSystem);
+unset($application, $ilchModules, $ilchSystem, $kohanaModules, $kohanaSystem);
 
 if ( ! getenv('DEVELOPMENT') AND file_exists('install'.EXT))
 {

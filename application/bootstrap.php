@@ -2,8 +2,20 @@
 
 // -- Environment setup --------------------------------------------------------
 
-// Load the core Kohana class
+// Load the core Kohana and the core Ilch class
 require SYSPATH.'classes/kohana/core'.EXT;
+require ILCH_SYSPATH.'classes/ilch/core'.EXT;
+
+if (is_file(APPPATH.'classes/ilch'.EXT))
+{
+	// Application extends the core
+	require APPPATH.'classes/ilch'.EXT;
+}
+else
+{
+	// Load empty core extension
+	require ILCH_SYSPATH.'classes/ilch'.EXT;
+}
 
 if (is_file(APPPATH.'classes/kohana'.EXT))
 {
@@ -13,8 +25,10 @@ if (is_file(APPPATH.'classes/kohana'.EXT))
 else
 {
 	// Load empty core extension
-	require SYSPATH.'classes/kohana'.EXT;
+	require ILCH_SYSPATH.'classes/kohana'.EXT;
 }
+
+
 
 /**
  * Set the default time zone.
