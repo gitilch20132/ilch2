@@ -25,6 +25,3 @@
 [submodule "kohana/modules/userguide"]
 	path = kohana/modules/userguide
 	url = https://github.com/kohana/userguide.git
-[submodule "ilch/system"]
-	path = ilch/system
-	url = https://github.com/IlchCMS/ilchpluto.system.git
