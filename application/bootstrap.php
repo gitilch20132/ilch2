@@ -3,29 +3,29 @@
 // -- Environment setup --------------------------------------------------------
 
 // Load the core Kohana and the core Ilch class
-require SYSPATH.'classes/kohana/core'.EXT;
-require ILCH_SYSPATH.'classes/ilch/core'.EXT;
+require KOHANA_SYSTEM.'classes/kohana/core'.EXT;
+require ILCH_SYSTEM.'classes/ilch/core'.EXT;
 
-if (is_file(APPPATH.'classes/ilch'.EXT))
+if (is_file(APPLICATION.'classes/ilch'.EXT))
 {
 	// Application extends the core
-	require APPPATH.'classes/ilch'.EXT;
+	require APPLICATION.'classes/ilch'.EXT;
 }
 else
 {
 	// Load empty core extension
-	require ILCH_SYSPATH.'classes/ilch'.EXT;
+	require ILCH_SYSTEM.'classes/ilch'.EXT;
 }
 
-if (is_file(APPPATH.'classes/kohana'.EXT))
+if (is_file(APPLICATION.'classes/kohana'.EXT))
 {
 	// Application extends the core
-	require APPPATH.'classes/kohana'.EXT;
+	require APPLICATION.'classes/kohana'.EXT;
 }
 else
 {
 	// Load empty core extension
-	require ILCH_SYSPATH.'classes/kohana'.EXT;
+	require ILCH_SYSTEM.'classes/kohana'.EXT;
 }
 
 
@@ -70,14 +70,14 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 I18n::lang('en-us');
 
 /**
- * Set Kohana::$environment if a 'KOHANA_ENV' environment variable has been supplied.
+ * Set Ilch::$environment if a 'KOHANA_ENV' environment variable has been supplied.
  *
  * Note: If you supply an invalid environment name, a PHP warning will be thrown
- * saying "Couldn't find constant Kohana::<INVALID_ENV_NAME>"
+ * saying "Couldn't find constant Ilch::<INVALID_ENV_NAME>"
  */
 if (isset($_SERVER['KOHANA_ENV']))
 {
-	Kohana::$environment = constant('Kohana::'.strtoupper($_SERVER['KOHANA_ENV']));
+	Ilch::$environment = constant('Ilch::'.strtoupper($_SERVER['KOHANA_ENV']));
 }
 
 /**
@@ -93,24 +93,19 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  profile     enable or disable internal profiling               TRUE
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
-Kohana::init(array(
+Ilch::init(array(
 	'base_url'   => preg_replace('/[^\/]+$/', '', $_SERVER['SCRIPT_NAME']),
 ));
 
 /**
  * Attach the file write to logging. Multiple writers are supported.
  */
-Kohana::$log->attach(new Log_File(APPPATH.'logs'));
-
-/**
- * Attach a file reader to config. Multiple readers are supported.
- */
-Kohana::$config->attach(new Config_File);
+Ilch::$log->attach(new Log_File(APPPATH.'logs'));
 
 /**
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
-Kohana::modules(array(
+Ilch::modules(array(
 	// 'auth'       => MODPATH.'auth',       // Basic authentication
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
