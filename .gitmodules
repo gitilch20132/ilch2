@@ -40,3 +40,6 @@
 [submodule "ilch/modules/event"]
 	path = ilch/modules/event
 	url = https://github.com/IlchCMS/ilch2.ilch.modules.event.git
+[submodule "ilch/modules/jquery"]
+	path = ilch/modules/jquery
+	url = https://github.com/IlchCMS/ilch2.ilch.modules.jquery.git
