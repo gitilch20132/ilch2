@@ -98,11 +98,6 @@ Ilch::init(array(
 ));
 
 /**
- * Attach the file write to logging. Multiple writers are supported.
- */
-Ilch::$log->attach(new Log_File(APPPATH.'logs'));
-
-/**
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Ilch::modules(array(
