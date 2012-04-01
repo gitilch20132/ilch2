@@ -43,3 +43,6 @@
 [submodule "ilch/modules/database"]
 	path = ilch/modules/database
 	url = https://github.com/IlchCMS/ilch2.ilch.modules.database.git
+[submodule "ilch/system"]
+	path = ilch/system
+	url = https://github.com/IlchCMS/ilch2.ilch.system.git
