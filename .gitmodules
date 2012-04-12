@@ -46,3 +46,6 @@
 [submodule "ilch/system"]
 	path = ilch/system
 	url = https://github.com/IlchCMS/ilch2.ilch.system.git
+[submodule "ilch/themes/pluto"]
+	path = ilch/themes/pluto
+	url = https://github.com/IlchCMS/ilch2.ilch.themes.pluto.git
