@@ -6,10 +6,10 @@
 require KOHANA_SYSTEM.'classes/kohana/core'.EXT;
 require ILCH_SYSTEM.'classes/ilch/core'.EXT;
 
-if (is_file(APPLICATION.'classes/ilch'.EXT))
+if (is_file(APPLICATION_SYSTEM.'classes/ilch'.EXT))
 {
 	// Application extends the core
-	require APPLICATION.'classes/ilch'.EXT;
+	require APPLICATION_SYSTEM.'classes/ilch'.EXT;
 }
 else
 {
@@ -17,17 +17,16 @@ else
 	require ILCH_SYSTEM.'classes/ilch'.EXT;
 }
 
-if (is_file(APPLICATION.'classes/kohana'.EXT))
+if (is_file(APPLICATION_SYSTEM.'classes/kohana'.EXT))
 {
 	// Application extends the core
-	require APPLICATION.'classes/kohana'.EXT;
+	require APPLICATION_SYSTEM.'classes/kohana'.EXT;
 }
 else
 {
 	// Load empty core extension
 	require ILCH_SYSTEM.'classes/kohana'.EXT;
 }
-
 
 
 /**
@@ -93,23 +92,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  profile     enable or disable internal profiling               TRUE
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
-Ilch::init(array(
-	'base_url'   => preg_replace('/[^\/]+$/', '', $_SERVER['SCRIPT_NAME']),
-));
-
-/**
- * Enable modules. Modules are referenced by a relative or absolute path.
- */
-Ilch::modules(array(
-	// 'auth'       => MODPATH.'auth',       // Basic authentication
-	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
-	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
-	// 'database'   => MODPATH.'database',   // Database access
-	// 'image'      => MODPATH.'image',      // Image manipulation
-	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
-	// 'unittest'   => MODPATH.'unittest',   // Unit testing
-	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
-	));
+Ilch::init();
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
