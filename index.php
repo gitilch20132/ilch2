@@ -16,11 +16,6 @@ define('DS', DIRECTORY_SEPARATOR);
 $application_path = 'application';
 
 /**
- * The custom contents directory.
- */
-$contents_path = 'contents';
-
-/**
  * The Ilch CMS directory.
  */
 $ilch_path = 'ilch';
@@ -32,7 +27,7 @@ $kohana_path = 'kohana';
 
 /**
  * The name for the subfolder for modules
- *  - relative to the custom contents directory
+ *  - relative to the application directory
  *  - relative to the Ilch CMS directory
  *  - relative to the Kohana framework directory
  */
@@ -40,13 +35,14 @@ $module_directory = 'modules';
 
 /**
  * The name for the subfolder for themes
- *  - relative to the custom contents directory
+ *  - relative to the application directory
  *  - relative to the Ilch CMS directory
  */
 $theme_directory = 'themes';
 
 /**
  * The name for the subfolder for the system
+ *  - relative to the application directory
  *  - relative to the Ilch CMS directory
  *  - relative to the Kohana framework directory
  */
@@ -89,10 +85,6 @@ define('DOCROOT', realpath(dirname(__FILE__)).DS);
 if ( ! is_dir($application_path) AND is_dir(DOCROOT.$application_path))
 	$application_path = DOCROOT.$application_path;
 
-// Make the custom contents path relative to the docroot
-if ( ! is_dir($contents_path) AND is_dir(DOCROOT.$contents_path))
-	$contents_path = DOCROOT.$contents_path;
-
 // Make the Ilch CMS path relative to the docroot
 if ( ! is_dir($ilch_path) AND is_dir(DOCROOT.$ilch_path))
 	$ilch_path = DOCROOT.$ilch_path;
@@ -101,13 +93,11 @@ if ( ! is_dir($ilch_path) AND is_dir(DOCROOT.$ilch_path))
 if ( ! is_dir($kohana_path) AND is_dir(DOCROOT.$kohana_path))
 	$kohana_path = DOCROOT.$kohana_path;
 
-// Define the absolute path for the application path
+// Define the absolute path for the application and custom contents path
 define('APPLICATION', realpath($application_path).DS);
-
-// Define the absolute path for the custom contents path
-define('CONTENTS', realpath($contents_path).DS);
-define('CONTENTS_THEME', realpath($contents_path.DS.$theme_directory).DS);
-define('CONTENTS_MODULE', realpath($contents_path.DS.$module_directory).DS);
+define('APPLICATION_THEME', realpath($application_path.DS.$theme_directory).DS);
+define('APPLICATION_MODULE', realpath($application_path.DS.$module_directory).DS);
+define('APPLICATION_SYSTEM', realpath($application_path.DS.$system_directory).DS);
 
 // Define the absolute path for the Ilch CMS path
 define('ILCH', realpath($ilch_path).DS);
@@ -121,7 +111,7 @@ define('KOHANA_MODULE', realpath($kohana_path.DS.$module_directory).DS);
 define('KOHANA_SYSTEM', realpath($kohana_path.DS.$system_directory).DS);
 
 // Default Kohana definations
-define('APPPATH', APPLICATION);
+define('APPPATH', APPLICATION_SYSTEM);
 define('MODPATH', KOHANA_MODULE);
 define('SYSPATH', KOHANA_SYSTEM);
 

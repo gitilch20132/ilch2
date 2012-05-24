@@ -5,5 +5,5 @@
 .buildpath
 .project
 .settings
-/application/cache/*
-/application/logs/*
+/application/system/cache/*
+/application/system/logs/*
