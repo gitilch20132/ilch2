@@ -31,14 +31,14 @@ $kohana_path = 'kohana';
  *  - relative to the Ilch CMS directory
  *  - relative to the Kohana framework directory
  */
-$module_directory = 'modules';
+$module_directory = 'module';
 
 /**
  * The name for the subfolder for themes
  *  - relative to the application directory
  *  - relative to the Ilch CMS directory
  */
-$theme_directory = 'themes';
+$theme_directory = 'theme';
 
 /**
  * The name for the subfolder for the system
