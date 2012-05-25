@@ -7,48 +7,48 @@
 [submodule "kohana/modules/cache"]
 	path = kohana/modules/cache
 	url = https://github.com/kohana/cache.git
-[submodule "kohana/modules/codebench"]
-	path = kohana/modules/codebench
+[submodule "kohana/module/codebench"]
+	path = kohana/module/codebench
 	url = https://github.com/kohana/codebench.git
-[submodule "kohana/modules/database"]
-	path = kohana/modules/database
+[submodule "kohana/module/database"]
+	path = kohana/module/database
 	url = https://github.com/kohana/database.git
-[submodule "kohana/modules/image"]
-	path = kohana/modules/image
+[submodule "kohana/module/image"]
+	path = kohana/module/image
 	url = https://github.com/kohana/image.git
-[submodule "kohana/modules/orm"]
-	path = kohana/modules/orm
+[submodule "kohana/module/orm"]
+	path = kohana/module/orm
 	url = https://github.com/kohana/orm.git
-[submodule "kohana/modules/unittest"]
-	path = kohana/modules/unittest
+[submodule "kohana/module/unittest"]
+	path = kohana/module/unittest
 	url = https://github.com/kohana/unittest.git
-[submodule "kohana/modules/userguide"]
-	path = kohana/modules/userguide
+[submodule "kohana/module/userguide"]
+	path = kohana/module/userguide
 	url = https://github.com/kohana/userguide.git
-[submodule "ilch/modules/bootstrap"]
-	path = ilch/modules/bootstrap
-	url = https://github.com/IlchCMS/ilch2.ilch.modules.bootstrap.git
-[submodule "ilch/modules/fontawesome"]
-	path = ilch/modules/fontawesome
-	url = https://github.com/IlchCMS/ilch2.ilch.modules.fontawesome.git
-[submodule "ilch/modules/jelly"]
-	path = ilch/modules/jelly
-	url = https://github.com/IlchCMS/ilch2.ilch.modules.jelly.git
-[submodule "ilch/modules/event"]
-	path = ilch/modules/event
-	url = https://github.com/IlchCMS/ilch2.ilch.modules.event.git
-[submodule "ilch/modules/jquery"]
-	path = ilch/modules/jquery
-	url = https://github.com/IlchCMS/ilch2.ilch.modules.jquery.git
-[submodule "ilch/modules/database"]
-	path = ilch/modules/database
-	url = https://github.com/IlchCMS/ilch2.ilch.modules.database.git
+[submodule "ilch/module/bootstrap"]
+	path = ilch/module/bootstrap
+	url = https://github.com/IlchCMS/ilch2.ilch.module.bootstrap.git
+[submodule "ilch/module/fontawesome"]
+	path = ilch/module/fontawesome
+	url = https://github.com/IlchCMS/ilch2.ilch.module.fontawesome.git
+[submodule "ilch/module/jelly"]
+	path = ilch/module/jelly
+	url = https://github.com/IlchCMS/ilch2.ilch.module.jelly.git
+[submodule "ilch/module/event"]
+	path = ilch/module/event
+	url = https://github.com/IlchCMS/ilch2.ilch.module.event.git
+[submodule "ilch/module/jquery"]
+	path = ilch/module/jquery
+	url = https://github.com/IlchCMS/ilch2.ilch.module.jquery.git
+[submodule "ilch/module/database"]
+	path = ilch/module/database
+	url = https://github.com/IlchCMS/ilch2.ilch.module.database.git
 [submodule "ilch/system"]
 	path = ilch/system
 	url = https://github.com/IlchCMS/ilch2.ilch.system.git
 [submodule "ilch/themes/pluto"]
 	path = ilch/themes/pluto
 	url = https://github.com/IlchCMS/ilch2.ilch.themes.pluto.git
-[submodule "ilch/modules/less"]
-	path = ilch/modules/less
-	url = https://github.com/IlchCMS/ilch2.ilch.modules.less.git
+[submodule "ilch/module/less"]
+	path = ilch/module/less
+	url = https://github.com/IlchCMS/ilch2.ilch.module.less.git
