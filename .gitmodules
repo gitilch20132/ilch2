@@ -52,3 +52,6 @@
 [submodule "ilch/module/less"]
 	path = ilch/module/less
 	url = https://github.com/IlchCMS/ilch2.ilch.module.less.git
+[submodule "ilch/module/lessphp"]
+	path = ilch/module/lessphp
+	url = C:\\xampp\\htdocs\\lessphp
