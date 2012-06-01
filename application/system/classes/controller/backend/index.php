@@ -4,7 +4,7 @@ class Controller_Backend_Index extends Controller_Backend_Template {
 
 	public function action_index()
 	{
-		// do nothing
+		$this->template->content = View::factory('backend/index/index');
 	}
 
 }
