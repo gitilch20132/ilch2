@@ -1,6 +1,3 @@
-[submodule "kohana/system"]
-	path = kohana/system
-	url = https://github.com/IlchCMS/ilch2.kohana.system.git
 [submodule "kohana/module/cache"]
 	path = kohana/module/cache
 	url = https://github.com/kohana/cache.git
@@ -25,12 +22,3 @@
 [submodule "kohana/module/userguide"]
 	path = kohana/module/userguide
 	url = https://github.com/kohana/userguide.git
-[submodule "ilch/system"]
-	path = ilch/system
-	url = https://github.com/IlchCMS/ilch2.ilch.system.git
-[submodule "ilch/theme/pluto"]
-	path = ilch/theme/pluto
-	url = https://github.com/IlchCMS/ilch2.ilch.theme.pluto.git
-[submodule "ilch/module/dbconfig"]
-	path = ilch/module/dbconfig
-	url = ../ilch2.ilch.module.dbconfig.git
