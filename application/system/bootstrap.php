@@ -80,6 +80,23 @@ if (isset($_SERVER['KOHANA_ENV']))
 }
 
 /**
+ * Set paths to modules
+ */
+Module_Loader::$paths = array(
+	APPLICATION.DS.'module',
+	ILCH.DS.'module',
+	KOHANA.DS.'module'
+);
+
+/**
+ * Set paths to themes
+ */
+Theme_Loader::$paths = array(
+	APPLICATION.DS.'module',
+	ILCH.DS.'module',
+);
+
+/**
  * Initialize Kohana, setting the default options.
  *
  * The following options are available:

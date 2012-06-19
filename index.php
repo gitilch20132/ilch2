@@ -26,29 +26,6 @@ $ilch_path = 'ilch';
 $kohana_path = 'kohana';
 
 /**
- * The name for the subfolder for modules
- *  - relative to the application directory
- *  - relative to the Ilch CMS directory
- *  - relative to the Kohana framework directory
- */
-$module_directory = 'module';
-
-/**
- * The name for the subfolder for themes
- *  - relative to the application directory
- *  - relative to the Ilch CMS directory
- */
-$theme_directory = 'theme';
-
-/**
- * The name for the subfolder for the system
- *  - relative to the application directory
- *  - relative to the Ilch CMS directory
- *  - relative to the Kohana framework directory
- */
-$system_directory = 'system';
-
-/**
  * The default extension of resource files. If you change this, all resources
  * must be renamed to use the new extension.
  *
@@ -95,28 +72,23 @@ if ( ! is_dir($kohana_path) AND is_dir(DOCROOT.$kohana_path))
 
 // Define the absolute path for the application and custom contents path
 define('APPLICATION', realpath($application_path).DS);
-define('APPLICATION_THEME', realpath($application_path.DS.$theme_directory).DS);
-define('APPLICATION_MODULE', realpath($application_path.DS.$module_directory).DS);
-define('APPLICATION_SYSTEM', realpath($application_path.DS.$system_directory).DS);
+define('APPLICATION_SYSTEM', realpath(APPLICATION.'system').DS);
 
 // Define the absolute path for the Ilch CMS path
 define('ILCH', realpath($ilch_path).DS);
-define('ILCH_THEME', realpath($ilch_path.DS.$theme_directory).DS);
-define('ILCH_MODULE', realpath($ilch_path.DS.$module_directory).DS);
-define('ILCH_SYSTEM', realpath($ilch_path.DS.$system_directory).DS);
+define('ILCH_SYSTEM', realpath(ILCH.'system').DS);
 
 // Define the absolute path for the Kohana framework path
 define('KOHANA', realpath($kohana_path).DS);
-define('KOHANA_MODULE', realpath($kohana_path.DS.$module_directory).DS);
-define('KOHANA_SYSTEM', realpath($kohana_path.DS.$system_directory).DS);
+define('KOHANA_SYSTEM', realpath(KOHANA.'system').DS);
 
 // Default Kohana definations
 define('APPPATH', APPLICATION_SYSTEM);
-define('MODPATH', KOHANA_MODULE);
+define('MODPATH', realpath($kohana_path.DS.'module').DS);
 define('SYSPATH', KOHANA_SYSTEM);
 
 // Clean up the configuration vars
-unset($application_path, $contents_path, $ilch_path, $kohana_path, $theme_directory, $module_directory, $system_directory);
+unset($application_path, $ilch_path, $kohana_path, $system_directory);
 
 /**
  * Wird erstmal auskommentiert, die Install-Runtime steht auch noch nicht fest
