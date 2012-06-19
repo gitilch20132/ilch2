@@ -92,8 +92,8 @@ Module_Loader::$paths = array(
  * Set paths to themes
  */
 Theme_Loader::$paths = array(
-	APPLICATION.DS.'module',
-	ILCH.DS.'module',
+	APPLICATION.DS.'theme',
+	ILCH.DS.'theme',
 );
 
 /**
