@@ -52,3 +52,6 @@
 [submodule "ilch/module/sample"]
 	path = ilch/module/sample
 	url = ../ilch2.ilch.modules.sample.git
+[submodule "ilch/module/fontawesome"]
+	path = ilch/module/fontawesome
+	url = ../ilch2.ilch.module.fontawesome.git
