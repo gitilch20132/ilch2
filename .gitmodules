@@ -49,3 +49,9 @@
 [submodule "kohana/module/userguide"]
 	path = kohana/module/userguide
 	url = ../ilch2.kohana.module.userguide.git
+[submodule "ilch/module/sample"]
+	path = ilch/module/sample
+	url = ../ilch2.ilch.modules.sample.git
+[submodule "ilch/module/fontawesome"]
+	path = ilch/module/fontawesome
+	url = ../ilch2.ilch.module.fontawesome.git
