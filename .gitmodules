@@ -25,9 +25,6 @@
 [submodule "kohana/system"]
 	path = kohana/system
 	url = ../../kohana/core.git
-[submodule "kohana/module/auth"]
-	path = kohana/module/auth
-	url = ../ilch2.kohana.module.auth.git
 [submodule "kohana/module/cache"]
 	path = kohana/module/cache
 	url = ../ilch2.kohana.module.cache
