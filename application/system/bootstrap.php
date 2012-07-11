@@ -66,7 +66,7 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 /**
  * Set the default language
  */
-I18n::lang('en-us');
+I18n::lang('de');
 
 /**
  * Set Ilch::$environment if a 'KOHANA_ENV' environment variable has been supplied.
