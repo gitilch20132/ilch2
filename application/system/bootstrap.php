@@ -82,7 +82,7 @@ if (isset($_SERVER['KOHANA_ENV']))
 /**
  * Set paths to modules
  */
-Module_Loader::$paths = array(
+Content_Module_Loader::$paths = array(
 	APPLICATION.DS.'module',
 	ILCH.DS.'module',
 	KOHANA.DS.'module'
@@ -91,7 +91,7 @@ Module_Loader::$paths = array(
 /**
  * Set paths to themes
  */
-Theme_Loader::$paths = array(
+Content_Theme_Loader::$paths = array(
 	APPLICATION.DS.'theme',
 	ILCH.DS.'theme',
 );
