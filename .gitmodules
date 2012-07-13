@@ -7,9 +7,6 @@
 [submodule "ilch/module/lessphp"]
 	path = ilch/module/lessphp
 	url = ../ilch2.ilch.module.lessphp.git
-[submodule "ilch/module/dbconfig"]
-	path = ilch/module/dbconfig
-	url = ../ilch2.ilch.module.dbconfig.git
 [submodule "ilch/module/jquery"]
 	path = ilch/module/jquery
 	url = ../ilch2.ilch.module.jquery.git
