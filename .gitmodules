@@ -49,3 +49,6 @@
 [submodule "ilch/module/fontawesome"]
 	path = ilch/module/fontawesome
 	url = ../ilch2.ilch.module.fontawesome.git
+[submodule "ilch/module/config"]
+	path = ilch/module/config
+	url = ../ilch2.ilch.module.config.git
