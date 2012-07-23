@@ -8,3 +8,4 @@
 /application/system/cache/*
 /application/system/logs/*
 !.gitignore
+/nbproject/

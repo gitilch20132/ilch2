@@ -66,7 +66,7 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 /**
  * Set the default language
  */
-I18n::lang('en-us');
+I18n::lang('de');
 
 /**
  * Set Ilch::$environment if a 'KOHANA_ENV' environment variable has been supplied.
@@ -82,7 +82,7 @@ if (isset($_SERVER['KOHANA_ENV']))
 /**
  * Set paths to modules
  */
-Module_Loader::$paths = array(
+Content_Module_Loader::$paths = array(
 	APPLICATION.DS.'module',
 	ILCH.DS.'module',
 	KOHANA.DS.'module'
@@ -91,7 +91,7 @@ Module_Loader::$paths = array(
 /**
  * Set paths to themes
  */
-Theme_Loader::$paths = array(
+Content_Theme_Loader::$paths = array(
 	APPLICATION.DS.'theme',
 	ILCH.DS.'theme',
 );
