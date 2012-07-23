@@ -1,0 +1,57 @@
+[submodule "kohana/system"]
+	path = kohana/system
+	url = https://github.com/IlchCMS/ilch2.kohana.system.git
+[submodule "kohana/module/cache"]
+	path = kohana/module/cache
+	url = https://github.com/IlchCMS/ilch2.kohana.module.cache.git
+[submodule "kohana/module/codebench"]
+	path = kohana/module/codebench
+	url = https://github.com/IlchCMS/ilch2.kohana.module.codebench.git
+[submodule "kohana/module/database"]
+	path = kohana/module/database
+	url = https://github.com/IlchCMS/ilch2.kohana.module.database.git
+[submodule "kohana/module/image"]
+	path = kohana/module/image
+	url = https://github.com/IlchCMS/ilch2.kohana.module.image.git
+[submodule "kohana/module/orm"]
+	path = kohana/module/orm
+	url = https://github.com/IlchCMS/ilch2.kohana.module.orm.git
+[submodule "kohana/module/unittest"]
+	path = kohana/module/unittest
+	url = https://github.com/IlchCMS/ilch2.kohana.module.unittest.git
+[submodule "kohana/module/userguide"]
+	path = kohana/module/userguide
+	url = https://github.com/IlchCMS/ilch2.kohana.module.userguide.git
+[submodule "ilch/system"]
+	path = ilch/system
+	url = https://github.com/IlchCMS/ilch2.ilch.system.git
+[submodule "ilch/theme/pluto"]
+	path = ilch/theme/pluto
+	url = https://github.com/IlchCMS/ilch2.ilch.theme.pluto.git
+[submodule "ilch/module/sample"]
+	path = ilch/module/sample
+	url = https://github.com/IlchCMS/ilch2.ilch.modules.sample.git
+[submodule "ilch/module/lessphp"]
+	path = ilch/module/lessphp
+	url = https://github.com/IlchCMS/ilch2.ilch.module.lessphp.git
+[submodule "ilch/module/jquery"]
+	path = ilch/module/jquery
+	url = https://github.com/IlchCMS/ilch2.ilch.module.jquery.git
+[submodule "ilch/module/jelly"]
+	path = ilch/module/jelly
+	url = https://github.com/IlchCMS/ilch2.ilch.module.jelly.git
+[submodule "ilch/module/fontawesome"]
+	path = ilch/module/fontawesome
+	url = https://github.com/IlchCMS/ilch2.ilch.module.fontawesome.git
+[submodule "ilch/module/event"]
+	path = ilch/module/event
+	url = https://github.com/IlchCMS/ilch2.ilch.module.event.git
+[submodule "ilch/module/email"]
+	path = ilch/module/email
+	url = https://github.com/IlchCMS/ilch2.ilch.module.email.git
+[submodule "ilch/module/config"]
+	path = ilch/module/config
+	url = https://github.com/IlchCMS/ilch2.ilch.module.config.git
+[submodule "ilch/module/bootstrap"]
+	path = ilch/module/bootstrap
+	url = https://github.com/IlchCMS/ilch2.ilch.module.bootstrap.git
