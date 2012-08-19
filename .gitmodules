@@ -58,6 +58,3 @@
 [submodule "ilch/module/blog"]
 	path = ilch/module/blog
 	url = https://github.com/IlchCMS/ilch2.ilch.module.blog.git
-[submodule "ilch/module/media"]
-	path = ilch/module/media
-	url = https://github.com/IlchCMS/ilch2.ilch.module.media.git
